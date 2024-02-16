@@ -1,0 +1,105 @@
+.hero-section{
+    background-color: #097fff;
+    padding-top: 200px;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    .hero-top-content{
+        text-align: center;
+        .logo{
+            font-size: 55px;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1;
+            margin-bottom: 0px;
+        }
+        .sub-title{
+            font-size: 18px;
+            font-weight: 300;
+            color: #fff;
+        }
+        .search-input-wrapper{
+            width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 8px;
+            border-radius: 7px;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            .search-input{
+                width: calc(100% - 50px);
+                border-radius: 0px;
+                height: 50px;
+                border: 1px solid #ddd;
+                font-size: 18px;
+                padding: 8px;
+            }
+            .search-btn{
+                width: 50px;
+                height: 50px;
+                border-radius: 0px;
+                border: 1px solid #ddd;
+                color: #fff;
+                background-color: #097fff;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                span{
+                    font-size: 38px;
+                }
+            }
+        }
+    }
+}
+
+// title-wrapper
+.title-wrapper{
+    margin-top: 20px;
+    text-align: center;
+    .lead{
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 0px;
+        line-height: 1;
+    }
+}
+// suggested-search-list-wrapper 
+.suggested-search-list-wrapper{
+    margin-top: 20px;
+    ul.catg-wrapper{
+        max-width: 900px;
+        margin: 0 auto;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        li.categories{
+            min-width: max-content;
+            a{
+                background-color: #fff;
+                border: 3px solid transparent;
+                border-radius: 2px;
+                color: #1A1A2E;
+                text-transform: uppercase;
+                min-width: max-content;
+                padding: 10px;
+                cursor: pointer;
+                display: inline-block;
+                text-decoration: none;
+                transition: all 0.25s ease-in-out;
+                &:hover{
+                    background-color: #fff;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-top-content">
+            <h1 class="logo">
+                <span>CARRYME.io</span>
+                <!-- <small>BETA</small> -->
+            </h1>
+            <!-- <p class="sub-title">MAKE IT YOURS!</p> -->
+            <p class="sub-title">Find Your Ideal Products with carryme.io</p>
+            <div class="search-input-wrapper">
+                <input class="search-input" type="text" placeholder="In search of...">
+                <button class="search-btn">
+                    <span class="material-symbols-rounded">near_me</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="title-wrapper">
+            <p class="lead">Top search categories:</p>
+            <!-- <p class="lead">Top search products:</p> -->
+        </div>
+
+        <div class="suggested-search-list-wrapper">
+            <ul class="catg-wrapper">
+                  <ng-container *ngFor="let item of animateData">
+                    <li class="categories">
+                        <a (click)="navigateUser(item)">{{item?.category}}</a>
+                    </li>
+                  </ng-container>
+              </ul>
+        </div>
+    </div>
+</section>
